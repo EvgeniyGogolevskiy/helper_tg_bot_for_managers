@@ -3,10 +3,10 @@ Telegram Bot for Adding Organizations in Costa Rica
 This project is a Telegram bot designed to simplify the process of adding new organizations for managers of a company. The bot provides a streamlined interface that allows managers to effortlessly input organization details. The bot integrates with a Notion database to manage and store organization data, ensuring a smooth and efficient workflow.
 Features
 
-    User-Friendly Interface: Easily add new organizations through a simple chat with the bot.
-    Notion Database Integration: Directly interacts with a Notion database to store and manage organization data.
-    Access Control: Only authorized Telegram accounts can interact with the bot.
-    Notifications: Sends updates to specified Telegram accounts when new organizations are added.
+    - User-Friendly Interface: Easily add new organizations through a simple chat with the bot.
+    - Notion Database Integration: Directly interacts with a Notion database to store and manage organization data.
+    - Access Control: Only authorized Telegram accounts can interact with the bot.
+    - Notifications: Sends updates to specified Telegram accounts when new organizations are added.
 
 Getting Started
 Prerequisites
