@@ -23,37 +23,37 @@ Before you can run the bot, make sure you have the following installed:
 
 1. **Clone the repository:**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
-   \`\`\`
+   ```
 
 2. **Create a `config.py` file:**
 
    Inside the project directory, create a file named `config.py` and add the necessary configuration details:
 
-   \`\`\`python
+   ```python
    # config.py
 
    TOKEN = 'your-telegram-bot-token'  # Your Telegram bot's API token
    id_list = ['user_id_1', 'user_id_2']  # List of Telegram user IDs that can interact with the bot
    id_notification_list = ['user_id_3', 'user_id_4']   # List of Telegram user IDs that will receive notifications
    NOTION_API_ID = 'your-notion-api-id'  # api to your Notion
-3. NOTION_DATABASE_ID = 'your-notion-database-id'  # id to your notion database
+   NOTION_DATABASE_ID = 'your-notion-database-id'  # id to your notion database
    mysql_db_path = 'your-database-url'  # URL to your main database (if applicable)
-   \`\`\`
+   ```
 
 3. **Install the required dependencies:**
 
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. **Run the bot:**
 
-   \`\`\`bash
+   ```bash
    python run.py
-   \`\`\`
+   ```
 
 ### Usage
 
@@ -63,11 +63,12 @@ After starting the bot, authorized users can add new organizations by interactin
 
 Make sure to update the following settings in the `config.py` file:
 
-- `TELEGRAM_TOKEN`: The API token for your Telegram bot.
-- `ALLOWED_USERS`: A list of Telegram user IDs allowed to interact with the bot.
-- `NOTIFY_USERS`: A list of Telegram user IDs that will receive notifications when new organizations are added.
-- `NOTION_DATABASE_URL`: The URL to your Notion database where the organizations' data will be stored.
-- `DATABASE_URL`: The URL to your main database (if applicable).
+- `TOKEN`: The API token for your Telegram bot.
+- `id_list`: A list of Telegram user IDs allowed to interact with the bot.
+- `id_notification_list`: A list of Telegram user IDs that will receive notifications when new organizations are added.
+- `NOTION_API_ID` API to your Notion
+- `NOTION_DATABASE_ID` id to your notion database
+- `mysql_db_path` URL to your main database (if applicable)
 
 ## Deployment
 
@@ -75,16 +76,16 @@ To deploy the bot to a server or cloud platform, follow these steps:
 
 1. **Set up a virtual environment:**
 
-   \`\`\`bash
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   \`\`\`
+   ```
 
 2. **Install dependencies:**
 
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 3. **Configure environment variables:**
 
@@ -92,14 +93,6 @@ To deploy the bot to a server or cloud platform, follow these steps:
 
 4. **Run the bot:**
 
-   \`\`\`bash
+   ```bash
    python run.py
-   \`\`\`
-
-### Contributing
-
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you'd like to change.
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   ```
